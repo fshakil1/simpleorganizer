@@ -22,6 +22,10 @@
     font-weight: bold;
 }
 
+#add-box:hover {
+    transform: translateX(-5px);
+}
+
 .box {
     padding: 15px;
     border: none;
@@ -86,13 +90,23 @@ button:hover {
     border-radius: 50%;
     background-color: #34495e;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
-    line-height: 20px;
+    line-height: 15px;
     position: fixed;
     bottom: 10px;
     right: 20px;
     z-index: 9999;
+    transition: 0.5s;
+}
+
+#question-mark-button:hover {
+    background-color:rgb(0, 0, 0);
+    border-color:rgb(153, 255, 0);
+    box-shadow:0px 5px 20px 6px rgb(255, 242, 0);
+    transform:translateY(-5px);
+    color:rgb(255, 255, 255);
+    cursor:pointer;
 }
 
 .output p {
