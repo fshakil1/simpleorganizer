@@ -265,7 +265,7 @@ $(document).ready(function () {
     setBackgroundColor();
 
     function createBox(boxId, bgColor) {
-        let title = localStorage.getItem(`box${boxId}-title`) || "New Title";
+        let title = localStorage.getItem(`box${boxId}-title`) || "Class Name";
         let outputArray = JSON.parse(localStorage.getItem(`box${boxId}-output`) || "[]");
 
         let box = $(`
